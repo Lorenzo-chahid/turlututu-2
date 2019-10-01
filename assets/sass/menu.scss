@@ -1,0 +1,54 @@
+.bluefond{
+    background: $primary;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width :100%;
+    margin: auto;
+    background: $fond-foncer;
+    color: $secondary;
+
+    li{
+        padding: $space-size $space-size;
+        
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .nav-item-1{
+        max-height: 0.5em;
+        padding-bottom: 2.3em;
+    }
+    
+}
+
+ul li:hover{
+    
+    text-decoration: none;
+    background: lighten($fond-foncer, 10%);
+    
+    a{
+        
+        text-decoration: none;
+        
+        
+        
+    }
+}
+
+
+

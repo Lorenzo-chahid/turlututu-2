@@ -1,0 +1,116 @@
+@import "compass";
+@import "compass/typography/vertical_rhythm";
+@import "compass/css3/border-radius";
+@import "media";
+
+
+/*
+$$$$$$$$$$ VARIABLES  $$$$$$$$$$$$
+
+*/
+$primary: #1e93cc;
+$secondary: #ffffff;
+$third: #eeeeee;
+$btn-color: #e99002;
+$font-standar: sans-serif 1.4em;
+$fond-foncer: #333333;
+$space-size: 20px;
+/*
+$$$$$$$$$$ Général $$$$$$$$$$$$
+
+*/
+*{
+    margin:0;
+    padding: 0;
+    text-align: center;
+    font: $font-standar;
+}
+button{
+    background: $btn-color;
+    padding: $space-size;
+}
+.breakpoint{
+    vertical-align: $base-line-height;
+}
+
+div{
+    margin-top: $space-size - 2px;
+}
+
+.txt-start{
+    text-align: start;
+}
+
+/*
+$$$$$$$$$$ Menu $$$$$$$$$$$$
+
+*/
+
+@import "menu";
+
+
+/*
+$$$$$$$$$$ En-TETE  $$$$$$$$$$$$
+
+*/
+.news{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+button{
+    @include border-radius(5px);
+    &:hover{
+        background: darken($btn-color, 10%);
+    }
+    
+ }
+
+
+ .corps{
+     padding-left: 25%;
+     display: flex;
+     justify-content: start;
+     flex-grow: 2;
+     .img{
+         flex-grow: 3;
+     }
+ }
+
+.partenaire{
+    
+    background: $third;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.bandeau{
+    @include clearfix;
+    margin-bottom: $space-size;
+}
+
+
+.affirmation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    width: 90%;
+    margin: auto;
+   
+    
+}
+
+ /*
+$$$$$$$$$$ FOOTER  $$$$$$$$$$$$
+
+*/
+
+ footer{
+     position: relative;
+     bottom: 0;
+     width: 100%;
+ }
