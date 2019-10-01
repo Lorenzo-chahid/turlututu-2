@@ -1,0 +1,58 @@
+@media only screen and (max-width: 750px) {
+  /* line 5, ../sass/media.scss */
+  .men {
+    display: none;
+  }
+
+  /* line 9, ../sass/media.scss */
+  .cloud {
+    max-width: 70px;
+  }
+
+  /* line 15, ../sass/media.scss */
+  .partenaire {
+    flex-wrap: wrap;
+  }
+
+  /* line 18, ../sass/media.scss */
+  #sponso {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  /* line 24, ../sass/media.scss */
+  footer {
+    position: relative;
+    bottom: 0;
+  }
+
+  /* line 32, ../sass/media.scss */
+  header {
+    position: static;
+    display: block;
+  }
+  /* line 36, ../sass/media.scss */
+  header .__icon {
+    position: absolute;
+    display: block;
+    float: left;
+    width: 35px;
+    height: 30px;
+    background: black;
+    cursor: pointer;
+  }
+  /* line 46, ../sass/media.scss */
+  header:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 0;
+    top: 0;
+    margin-left: 0.5em;
+    box-shadow: 0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF;
+    box-shadow: 0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF;
+    box-shadow: 0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF;
+  }
+}

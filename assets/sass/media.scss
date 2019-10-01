@@ -1,0 +1,58 @@
+@media only screen and (max-width: 750px){
+    @import "compass";
+    
+    // Image Perso
+    .men{
+        display: none;
+    }
+    //image logo cloud
+    .cloud{
+        max-width: 70px;
+    }
+
+    
+    //Bandeau partenaire 
+    .partenaire{
+        flex-wrap: wrap;
+    }
+    #sponso{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    //footer
+    footer{
+        position: relative;
+        bottom: 0;
+    }
+
+    // NAV MOBILE 
+    
+    
+    header{
+        position: static;
+        display: block;
+       
+        .__icon{
+            position: absolute;
+            display: block;
+            float: left;
+            width: 35px;
+            height: 30px;
+            background: black;
+
+            cursor: pointer;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            display: block;
+            width: 16px;
+            height: 0;
+            top: 0;
+            margin-left: 0.5em;
+            @include box-shadow(0 10px 0 1px #FFF,0 16px 0 1px #FFF,0 22px 0 1px #FFF)
+        }
+    }
+   
+}
