@@ -10,15 +10,35 @@
         max-width: 70px;
     }
 
-    
+    .nav-item-1{
+        grid-row: 2;
+    }
+
+    .corps{
+        padding-right: 20%;
+    }
+
+    .affirmation{
+        @include display-flex;
+    }
     //Bandeau partenaire 
     .partenaire{
         flex-wrap: wrap;
+        
     }
     #sponso{
         display: flex;
         flex-direction: column;
         padding: 10px;
+        justify-content: space-around;
+    }
+
+    button{
+        margin-bottom: 10px;
+        &.btnb{
+            min-width: 99%;
+            
+        }
     }
     //footer
     footer{
@@ -39,7 +59,7 @@
             float: left;
             width: 35px;
             height: 30px;
-            background: black;
+            background: #333 ;
 
             cursor: pointer;
         }

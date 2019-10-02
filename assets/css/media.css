@@ -9,40 +9,66 @@
     max-width: 70px;
   }
 
-  /* line 15, ../sass/media.scss */
+  /* line 13, ../sass/media.scss */
+  .nav-item-1 {
+    grid-row: 2;
+  }
+
+  /* line 17, ../sass/media.scss */
+  .corps {
+    padding-right: 20%;
+  }
+
+  /* line 21, ../sass/media.scss */
+  .affirmation {
+    display: flex;
+    display: flex;
+  }
+
+  /* line 25, ../sass/media.scss */
   .partenaire {
     flex-wrap: wrap;
   }
 
-  /* line 18, ../sass/media.scss */
+  /* line 29, ../sass/media.scss */
   #sponso {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    justify-content: space-around;
   }
 
-  /* line 24, ../sass/media.scss */
+  /* line 36, ../sass/media.scss */
+  button {
+    margin-bottom: 10px;
+  }
+  /* line 38, ../sass/media.scss */
+  button.btnb {
+    min-width: 99%;
+  }
+
+  /* line 44, ../sass/media.scss */
   footer {
     position: relative;
     bottom: 0;
   }
 
-  /* line 32, ../sass/media.scss */
+  /* line 52, ../sass/media.scss */
   header {
     position: static;
     display: block;
   }
-  /* line 36, ../sass/media.scss */
+  /* line 56, ../sass/media.scss */
   header .__icon {
     position: absolute;
     display: block;
     float: left;
     width: 35px;
     height: 30px;
-    background: black;
+    background: #333;
     cursor: pointer;
   }
-  /* line 46, ../sass/media.scss */
+  /* line 66, ../sass/media.scss */
   header:after {
     content: '';
     position: absolute;
