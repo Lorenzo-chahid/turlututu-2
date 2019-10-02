@@ -10,40 +10,66 @@
     max-width: 70px;
   }
 
-  /* line 15, ../sass/media.scss */
+  /* line 13, ../sass/media.scss */
+  .nav-item-1 {
+    grid-row: 2;
+  }
+
+  /* line 17, ../sass/media.scss */
+  .corps {
+    padding-right: 20%;
+  }
+
+  /* line 21, ../sass/media.scss */
+  .affirmation {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  /* line 25, ../sass/media.scss */
   .partenaire {
     flex-wrap: wrap;
   }
 
-  /* line 18, ../sass/media.scss */
+  /* line 29, ../sass/media.scss */
   #sponso {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    justify-content: space-around;
   }
 
-  /* line 24, ../sass/media.scss */
+  /* line 36, ../sass/media.scss */
+  button {
+    margin-bottom: 10px;
+  }
+  /* line 38, ../sass/media.scss */
+  button.btnb {
+    min-width: 99%;
+  }
+
+  /* line 44, ../sass/media.scss */
   footer {
     position: relative;
     bottom: 0;
   }
 
-  /* line 32, ../sass/media.scss */
+  /* line 52, ../sass/media.scss */
   header {
     position: static;
     display: block;
   }
-  /* line 36, ../sass/media.scss */
+  /* line 56, ../sass/media.scss */
   header .__icon {
     position: absolute;
     display: block;
     float: left;
     width: 35px;
     height: 30px;
-    background: black;
+    background: #333;
     cursor: pointer;
   }
-  /* line 46, ../sass/media.scss */
+  /* line 66, ../sass/media.scss */
   header:after {
     content: '';
     position: absolute;
@@ -111,10 +137,13 @@ $$$$$$$$$$ Menu $$$$$$$$$$$$
   margin: auto;
 }
 
-/* line 13, ../sass/menu.scss */
+/* line 14, ../sass/menu.scss */
 nav ul {
   list-style: none;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -123,27 +152,27 @@ nav ul {
   background: #333333;
   color: #ffffff;
 }
-/* line 24, ../sass/menu.scss */
+/* line 26, ../sass/menu.scss */
 nav ul li {
   padding: 20px 20px;
 }
-/* line 28, ../sass/menu.scss */
+/* line 30, ../sass/menu.scss */
 nav ul a {
   color: white;
   text-decoration: none;
 }
-/* line 32, ../sass/menu.scss */
+/* line 34, ../sass/menu.scss */
 nav ul .nav-item-1 {
   max-height: 0.5em;
   padding-bottom: 2.3em;
 }
 
-/* line 39, ../sass/menu.scss */
+/* line 41, ../sass/menu.scss */
 ul li:hover {
   text-decoration: none;
   background: #4d4d4d;
 }
-/* line 44, ../sass/menu.scss */
+/* line 46, ../sass/menu.scss */
 ul li:hover a {
   text-decoration: none;
 }
@@ -154,49 +183,59 @@ $$$$$$$$$$ En-TETE  $$$$$$$$$$$$
 */
 /* line 56, ../sass/style.scss */
 .news {
+  display: -webkit-flex;
   display: flex;
-  flex-wrap: wrap;
+  -webkit-flex-direction: row;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
-/* line 62, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 button {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 64, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 button:hover {
   background: #b67102;
 }
+/* line 68, ../sass/style.scss */
+button.btnb {
+  width: 20%;
+}
 
-/* line 71, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 .corps {
   padding-left: 25%;
   display: flex;
   justify-content: start;
-  flex-grow: 2;
-}
-/* line 76, ../sass/style.scss */
-.corps .img {
-  flex-grow: 3;
 }
 
 /* line 81, ../sass/style.scss */
 .partenaire {
   background: #eeeeee;
+  display: -webkit-flex;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  min-height: 250px;
+}
+/* line 90, ../sass/style.scss */
+.partenaire .red {
+  align-self: flex-end;
+  padding-bottom: 50px;
 }
 
-/* line 91, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 .bandeau {
   overflow: hidden;
   *zoom: 1;
   margin-bottom: 20px;
 }
 
-/* line 97, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 .affirmation {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -209,7 +248,7 @@ button:hover {
 $$$$$$$$$$ FOOTER  $$$$$$$$$$$$
 
 */
-/* line 112, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 footer {
   position: relative;
   bottom: 0;

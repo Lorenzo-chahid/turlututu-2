@@ -1,0 +1,6 @@
+@mixin display-flex($display: flex) {
+    @include flexbox((display: $display));
+  }
+@mixin flex-direction($direction) {
+    @include flexbox((flex-direction: $direction));
+  }

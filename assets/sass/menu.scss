@@ -10,9 +10,11 @@
 
 }
 
+
 nav ul{
     list-style: none;
-    display: flex;
+    @include display-flex;
+    @include flex-direction(column);
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
